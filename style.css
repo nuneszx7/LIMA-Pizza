@@ -368,6 +368,13 @@ footer{
     font-style: italic;
 }
 
+
+
+
+
+
+
+/* tablet */
 @media (max-width: 1024px) {
    header {
        position: absolute;
@@ -474,4 +481,130 @@ footer{
        margin-bottom: 64px;
    }
 
+}
+
+
+
+
+
+
+/* mobile */
+
+@media(max-width:768px) {
+    header {
+        position: absolute;
+        background-color: transparent;
+        left: 0;
+        top: 0px;
+    }
+
+    header menu {
+        width: 139vw;
+        height: 64px;
+        position: absolute;
+        left: 0;
+        top: 1200px;
+        background-color: var(--primary-color);
+        z-index: 999;
+        color: #fff;
+        justify-content: space-evenly;
+        /* pointer-events: none; */
+    }
+ 
+    header li:hover {
+        color: var(--primary-color);
+    }
+ 
+    .home {
+        grid-template-rows: auto;
+    }
+ 
+    .hero {
+        left: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: end;
+        padding-bottom: 140px;
+    }
+ 
+    .home .container-produtos {
+        display: none;
+    }
+ 
+    .container-produtos {
+        gap: 32px;
+    }
+ 
+    .container-produtos .pizza {
+        width: 100%;
+    }
+ 
+    .container-produtos img {
+        width: 100%;
+    }
+ 
+    .container-produtos .pizza:nth-child(3),
+    .container-produtos .pizza:nth-child(4),
+    .container-produtos .pizza:nth-child(6)
+    {
+     display: none;
+    }
+        
+    .cardapio {
+        justify-content: center;
+        gap: 24px;
+    }
+ 
+    .pizza.bebida {
+        width: 20%;
+    }
+ 
+    .opcoes-servicos {
+        flex-direction: column;
+        gap: 24px;
+    }
+ 
+    .servico-card {
+        justify-content: center;
+        width: 100%;
+        height: 260px;
+        flex-wrap: wrap;
+    }
+
+    .servico-card h4 {
+        display: none;
+    }
+
+    .servico-card p {
+        display: none;
+    }
+    
+    .contatos-container {
+        height: 400px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        left: 0;
+    }
+ 
+    .contatos-item {
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+    }
+ 
+    .contatos-item:nth-child(2){
+        display: none;
+    }
+ 
+    .contatos-item.social {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+ 
+    .creditos {
+        margin-bottom: 32px;
+    }
+ 
 }
